@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bebas-neue-regular,h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-regular,p ,li,button,a{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #36454F;
+}
+.line1{
+    text-indent: 70px;
+}
+
+.word2,.word3,.word4,.word6,.word8,.word10,.word12,.word14{
+    padding: 6px;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+.missionBg{
+    background: url('./Images/silver-basin-mixer-isolated-gray-background.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+.footer{
+    background: url("./Images/plumbing-repair-service.webp");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.ceoImg{
+    clip-path:circle(60% at 50% 50%)
+}
+
+.show{
+    display: block;
+}
+.Testimonial-back{
+    background: url("./Images/Wasted water from the tap_ Stock Photo _ Adobe Stock.jpeg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
