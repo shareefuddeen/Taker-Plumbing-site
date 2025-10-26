@@ -5,13 +5,13 @@ import { Link } from "react-router-dom"
 export default function Navbar() {
   
   return (
-    <nav className='w-[100vw] absolute z-20 h-14'>
-      <div className='w-[34em] md:w-[40em] h-full navbar relative rounded-full mx-auto text-white bg-black flex justify-between items-center p-2 mt-6'>
+    <nav className='w-[100vw] absolute z-20 h-32 md:h-14'>
+      <div className='w-full md:w-[34em] md:w-[45em] h-full navbar relative rounded md:rounded-full mx-auto text-white bg-black/40 flex flex-col md:flex-row justify-between items-center p-4 md:p-2 gap-1 mt-0 md:mt-6'>
         <Link to="" className="flex gap-2 justify-center items-center">
           <img src={img6} className="md:w-12 md:h-12 w-6 h-6  rounded-full"/>
-          <h1 className="text-xl mt-1 italic tracking-[2px]">Takerflow</h1>
+          <h1 className="text-2xl font-bold mt-1 italic tracking-[2px]">Takerflow</h1>
         </Link>
-        <ul className='flex flex-end gap-1 text-md md:text-xl '>
+        <ul className='flex flex-end gap-1 text-xl '>
           <li className='cursor-pointer py-2 px-4 rounded-full hover:bg-white hover:text-black transition'><Link to="" className="flex justify-center items-center gap-1"> <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
