@@ -33,8 +33,8 @@ export default function App() {
   }, []);
   return (
     <main >
-      <Navbar />
       <BrowserRouter>
+      <Navbar />
         <Routes>
           <Route path="/" element={
             <>
@@ -46,11 +46,11 @@ export default function App() {
             <Contact/> 
             </>
           } />
-          <Route path="/servies" element={<ServicesDetails/>}/>
+          <Route path="/services" element={<ServicesDetails/>}/>
           <Route path="/contact" element={<ContactDetails/>}/>
         </Routes>
-      </BrowserRouter>
       <Footer/>
+      </BrowserRouter>
     </main>
   )
 }

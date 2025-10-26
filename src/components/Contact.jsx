@@ -1,5 +1,5 @@
 
-import img8 from "../Images/6234.jpg"
+import img8 from "../Images/6234.webp"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useEffect } from "react"
 import gsap from "gsap"

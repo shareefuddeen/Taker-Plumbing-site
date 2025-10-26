@@ -1,8 +1,8 @@
 import img1 from "../Images/6234.webp"
 import img2 from "../Images/plumbing-professional-doing-his-job.webp"
-import img4 from "../Images/ChatGPT Image Oct 17, 2025, 07_44_15 AM.png"
-import img5 from "../Images/ChatGPT Image Oct 17, 2025, 07_33_55 AM.png"
-import img6 from "../Images/ChatGPT Image Oct 22, 2025, 12_37_49 PM.png"
+import img4 from "../Images/ChatGPT Image Oct 17, 2025, 07_44_15 AM.webp"
+import img5 from "../Images/ChatGPT Image Oct 17, 2025, 07_33_55 AM.webp"
+import img6 from "../Images/ChatGPT Image Oct 22, 2025, 12_37_49 PM.webp"
 import React, { useEffect } from 'react'
 import  gsap  from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'

@@ -45,7 +45,7 @@ const Services = () => {
     return (
         <section className="min-h-[140vh] -mt-[12em] flex flex-col justify-center p-14 items-center">
             <p className="text-xl mb-12 bg-gray-200 rounded-full px-4 py-2 ">What we offer</p>
-            <div className="grid md:grid-cols-2 gap-12 lg:grid-cols-4 lg:gap-20 md:gap-x-20 md:gap-y-12 p-16">
+            <div className="grid md:grid-cols-2 gap-12 lg:grid-cols-3 lg:gap-20 md:gap-x-20 md:gap-y-12 p-16">
                 <div className="flex rounded shadow-lg hover:shadow-xl transition justify-center w-[16em] lg:w-[16em] md:w-[16em] items-center bg-[#F5DEB3] flex-col service">
                     <div className="px-4 py-2 w-full ">
                         <img src={img5} alt="24/7 illustration" className="w-full mx-auto" loading="lazy" />
@@ -101,10 +101,6 @@ const Services = () => {
                      </div>
                 </div>
             </div>
-            <div className="flex justify-center items-center">
-                <a href="" className="btn text-lg flex mt-8 justify-center items-center gap-1 w-full bg-black hover:bg-black/40 px-4 py-2 rounded-md text-white transition ">reach out now<span>&rarr;</span></a>
-            </div>
-
 
             {/*<div className="w-full z-20 flex flex-col justify-center items-center h-full">
                 <p className="text-xl mb-6 bg-gray-200 rounded-full px-4 py-2 ">What we offer</p>
