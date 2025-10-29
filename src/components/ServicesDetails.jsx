@@ -12,36 +12,6 @@ const Services = () => {
    
       gsap.registerPlugin(ScrollTrigger);
 
-      useEffect(()=>{
-
-        const cardAnim = gsap.from(".service", {
-            y: 122,
-            ease: "power1.out",
-            stagger: 0.1,
-            opacity:0,
-            scrollTrigger:{
-                trigger:".service",
-                start:"top bottom",
-                end:"top center",
-                scrub:1
-            }
-    })
-          gsap.from(".btn", {
-            y: 62,
-            opacity:0,
-            ease: "power4.out",
-            scrollTrigger:{
-                trigger:".btn",
-                start:"top 80%",
-                end:"bottom 80%",
-                scrub:1
-            }
-    })
-          return () => {
-            cardAnim.revert()
-          }
-
-      },[])
 
     return (
         <section className="min-h-[140vh] z-10 -mt-[12em] flex flex-col justify-center p-14 items-center">

@@ -12,22 +12,22 @@ const Testimonial = () => {
 
       gsap.registerPlugin(ScrollTrigger);
 
-      useEffect(()=>{
+    //   useEffect(()=>{
 
-        gsap.from(".testimonial", {
-            y: 122,
-            ease: "power1.out",
-            stagger: 0.2,
-            opacity:0,
-            scrollTrigger:{
-                trigger:".testimonial",
-                start:"top bottom",
-                end:"top center",
-                scrub:1
-            }
-    })
+    //     gsap.from(".testimonial", {
+    //         y: 122,
+    //         ease: "power1.out",
+    //         stagger: 0.2,
+    //         opacity:0,
+    //         scrollTrigger:{
+    //             trigger:".testimonial",
+    //             start:"top 80%",
+    //             end:"top center",
+    //             scrub:1
+    //         }
+    // })
 
-      },[])
+    //   },[])
 
     return(
         <section className="min-h-[120vh] mt-[12vh] flex bg-white justify-center items-center flex-col">

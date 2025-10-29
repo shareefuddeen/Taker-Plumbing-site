@@ -28,7 +28,7 @@ body{
 
 .word2,.word3,.word4,.word6,.word8,.word10,.word12,.word14{
     padding: 6px;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 6px;
 }
 .missionBg{

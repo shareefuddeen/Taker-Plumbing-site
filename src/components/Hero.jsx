@@ -1,58 +1,55 @@
 import React, { useEffect } from 'react'
-import  gsap  from 'gsap'
+import gsap from 'gsap'
 import { SplitText } from 'gsap/SplitText'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import ImagePlumber from "../Images/professional-worker-fixing-bathroom.webp"
 import HeroImage from "../Images/top-view-international-worker-s-day-with-engineer-tools.webp"
-
 
 export default function Hero() {
 
-  gsap.registerPlugin(SplitText);
-  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(SplitText, ScrollTrigger);
 
   useEffect(() => {
-    
-    document.fonts.ready.then(()=>{
-        const Htext = new SplitText(".Htext", {
-      type: "words",
-      autoSplit: true,
-      mask: "words",
-  
-    })
-    const tl = gsap.timeline()
-    tl.from(Htext.words, {
-      y: 42,
-      delay:1,
-      ease: "power1.out",
-      stagger: 0.1,
-      duration: 1,
-      opacity:0
-    })
-    
+    let Htext; // define outside
 
-    gsap.to("#hero",{
-      y:-1260,
-      ease:"power2.out",
-      scrollTrigger:{
-        trigger:"#hero",
-        start:"bottom 80%",
-        end:"center top",
-        scrub:2
-      }
-     })
-    })
+    document.fonts.ready.then(() => {
+      Htext = new SplitText(".Htext", {
+        type: "words",
+        autoSplit: true,
+        mask: "words",
+      });
 
-     return () =>{
-      Htext.revert();
-     }
-  }, [])
+      gsap.matchMedia().add("(min-width:481px)", () => {
+        const tl = gsap.timeline();
+        tl.from(Htext.words, {
+          y: 42,
+          delay: 1,
+          ease: "power1.out",
+          stagger: 0.1,
+          duration: 1,
+          opacity: 0,
+        });
+      });
+
+      gsap.to("#hero", {
+        y: -1260,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: "#hero",
+          start: "bottom 80%",
+          end: "center top",
+          scrub: 2,
+        },
+      });
+    });
+
+  }, []);
 
   return (
-    <section id='hero' className='h-screen relative hero overflow-hidden '>
-      <img src={HeroImage} alt="hero image" className="-z-10 w-full h-full object-fit absolute"/>
-      <h1 className="lg:text-[32vh] md:top-[48vh] sm:top-[52vh] sm:text-[18vh] md:text-[22vh] text-[12vh] text-white font-bold m-0 absolute lg:tracking-[20px] lg:top-[52vh] left-4 top-[4em]">Takerflow</h1>
-      <p className="bottom-[12em] md:text-[5vh] sm:top-[72vh] sm:text-[4.2vh] text-[1.2em] lg:top-[88vh] lg:text-[6vh] Htext text-white font-bold  ml-9 md:m-0 absolute left-0 md:left-14">Reliable Plumbing Services You Can Trust</p>
+    <section id='hero' className='h-screen relative hero overflow-hidden'>
+      <div className="absolute w-full h-full bg-black/40"></div>
+      <img src={HeroImage} alt="hero" className="-z-10 w-full h-full object-fit absolute" />
+      <h1 className="text-[17vw] tracking-[-0.2vw] bottom-[7vw] left-[2.6vw] text-white font-bold m-0 absolute">Takerflow</h1>
+      <p className="text-[4vw] Htext text-white font-bold absolute left-[4.3vw] bottom-[7vw]">Reliable Plumbing Services You Can Trust</p>
     </section>
   )
 }

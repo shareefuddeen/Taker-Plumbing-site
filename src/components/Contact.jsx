@@ -10,20 +10,6 @@ const Contact = () => {
 
     gsap.registerPlugin(ScrollTrigger)
 
-    useEffect(()=>{
-        gsap.from(".btn", {
-            y: 62,
-            opacity:0,
-            ease: "power4.out",
-            scrollTrigger:{
-                trigger:".btn",
-                start:"top 80%",
-                end:"bottom 80%",
-                scrub:1
-            }
-    })
-    },[])
-
     return (
         <section className="min-h-screen p-12 contact flex justify-center flex-col items-center">
             <p className="text-md bg-gray-200 rounded-full my-16 px-4 py-2">Contact us</p>
