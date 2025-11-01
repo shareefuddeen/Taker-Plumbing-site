@@ -9,8 +9,7 @@ import Footer from './components/Footer'
 import Lenis from "@studio-freight/lenis";
 import {BrowserRouter, Routes, Route } from "react-router-dom"
 import Navbar from './components/Navbar'
-import ServicesDetails from './pages/ServicesDetails'
-import ContactDetails from './pages/ContactDetails'
+import Work from './pages/Work'
 
 
 export default function App() {
@@ -46,8 +45,7 @@ export default function App() {
             <Contact/> 
             </>
           } />
-          <Route path="/services" element={<ServicesDetails/>}/>
-          <Route path="/contact" element={<ContactDetails/>}/>
+          <Route path="/work" element={<Work/>}/>
         </Routes>
       <Footer/>
       </BrowserRouter>

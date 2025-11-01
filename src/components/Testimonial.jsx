@@ -12,28 +12,26 @@ const Testimonial = () => {
 
       gsap.registerPlugin(ScrollTrigger);
 
-    //   useEffect(()=>{
+      useEffect(()=>{
 
-    //     gsap.from(".testimonial", {
-    //         y: 122,
-    //         ease: "power1.out",
-    //         stagger: 0.2,
-    //         opacity:0,
-    //         scrollTrigger:{
-    //             trigger:".testimonial",
-    //             start:"top 80%",
-    //             end:"top center",
-    //             scrub:1
-    //         }
-    // })
+        gsap.to(".testimonial", {
+            y: 0,
+            ease: "power1.out",
+            stagger: 0.2,
+            opacity:1,
+            scrollTrigger:{
+                trigger:".testimonial",
+                start:"top 80%"
+            }
+    })
 
-    //   },[])
+      },[])
 
     return(
         <section className="min-h-[120vh] mt-[12vh] flex bg-white justify-center items-center flex-col">
             <p className="p-12 text-md bg-gray-200 my-6 rounded-full px-4 py-2">What our customers say about us</p>          
-            <div className="gap-12 p-20 flex-wrap lg:flex-nowrap flex justify-center items-center">
-            <div className="py-12 testimonial px-8 bg-black text-white rounded-lg t1">
+            <div className="gap-12 p-6 md:p-20 flex-wrap lg:flex-nowrap flex justify-center items-center">
+            <div className="py-12 testimonial opacity-0 translate-y-[122px] px-8 bg-black text-white rounded-lg t1">
                 <img src={stars} loading="lazy" className="w-18 h-6 mb-2" alt="stars"/>
                 <p className=" text-xl italic">"I had a major leak in my kitchen late at night, and they responded within minutes! The plumber arrived on time, was polite, and fixed the problem quickly. I was really impressed with their professionalism and fair pricing. Highly recommend them!” –</p>
                 <div className="flex mt-4 items-center gap-2">
@@ -44,7 +42,7 @@ const Testimonial = () => {
                     </div>
                 </div>
             </div>
-            <div className="py-12 testimonial px-8 bg-black text-white rounded-lg">
+            <div className="py-12 testimonial opacity-0 translate-y-[122px] px-8 bg-black text-white rounded-lg">
                 <img src={stars} loading="lazy" className="w-18 h-6 mb-2" alt="stars"/>
                 <p className=" text-xl italic">"We’ve been using this company for all our plumbing maintenance, and they’ve never disappointed. From routine inspections to emergency repairs, their work is always top-notch. Reliable, skilled, and easy to work with.</p>
                 <div className="flex mt-4 items-center gap-2">
@@ -55,7 +53,7 @@ const Testimonial = () => {
                     </div>
                 </div>
             </div>
-             <div className="py-12 testimonial px-8 bg-black text-white rounded-lg">
+             <div className="py-12 w-full sm:w-auto testimonial opacity-0 translate-y-[122px] px-8 bg-black text-white rounded-lg">
                 <img src={stars} loading="lazy" className="w-18 h-6 mb-2" alt="stars"/>
                 <p className=" text-xl italic">"Our restaurant had a blocked drain during peak hours, and they came through immediately. The technician explained everything clearly and got us back in business fast. Excellent service from start to finish!"</p>
                 <div className="flex mt-4 items-center gap-2">

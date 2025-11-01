@@ -45,7 +45,7 @@ const Footer = () => {
         <div>
           <p ref={fheading} className="md:text-7xl text-4xl overflow-hidden font-bold text-white">Let's Work.</p>
           <p className="text-lg text-white mt-1 ml-[5px]">Need a plumber today?</p>
-          <a href="#" className="text-lg flex justify-center items-center mt-6 gap-1 bg-black w-[12vw] hover:bg-black/40 px-6 py-2 rounded-md text-white transition duration-300 hover:scale-105">
+          <a href="#contact" className="text-lg flex justify-center items-center mt-6 gap-1 bg-black w-[8em] sm:w-[12vw] hover:bg-black/40 px-6 py-2 rounded-md text-white transition duration-300 hover:scale-105">
             <span>Get</span><span>in</span><span>touch</span><span>&rarr;</span>
           </a>
         </div>

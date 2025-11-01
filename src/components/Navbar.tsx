@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import img6 from "../Images/ChatGPT Image Oct 9, 2025, 01_29_11 PM.webp";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isClicked, setIsClicked] = useState(false);
 
   const navLinks = [
-    { name: "About", path: "" },
-    { name: "Services", path: "/services" },
-    { name: "Contact", path: "/contact" },
+    { name: "About", path: "#About" },
+    { name: "Services", path: "#service" },
+    { name: "Contact", path: "#contact" },
   ];
 
   return (
@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="w-[85vw] navbar relative rounded-full text-white flex justify-between items-center mx-auto p-3 mt-6 backdrop-blur-md bg-black/30 shadow-md">
         
         {/* Logo */}
-        <Link to="" className="flex gap-2 justify-center items-center">
+        <Link to="/" className="flex gap-2 justify-center items-center">
           <img src={img6} alt="Logo" className="md:w-12 md:h-12 w-8 h-8 rounded-full" />
           <h1 className="text-xl sm:text-2xl font-bold italic tracking-[2px]">
             Takerflow
@@ -30,7 +30,7 @@ export default function Navbar() {
               key={i}
               className="cursor-pointer py-2 px-4 rounded-full hover:bg-white hover:text-black transition"
             >
-              <Link to={link.path} className="flex items-center gap-1">
+              <a href={link.path} className="flex items-center gap-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -57,7 +57,7 @@ export default function Navbar() {
                   />
                 </svg>
                 {link.name}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>
@@ -118,7 +118,7 @@ export default function Navbar() {
               className="py-2 hover:bg-white hover:text-black transition"
               onClick={() => setIsClicked(false)}
             >
-              <Link to={link.path}>{link.name}</Link>
+              <a href={link.path}>{link.name}</a>
             </li>
           ))}
         </ul>

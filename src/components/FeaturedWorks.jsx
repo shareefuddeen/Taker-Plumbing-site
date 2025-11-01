@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { Link } from "react-router-dom";
+
 
 import img5 from "../Images/24+ Photos You Should See If You Want To Install….webp"
 import img2 from "../Images/p12.webp"
@@ -12,7 +14,7 @@ import img7 from "../Images/pl.webp"
 import img8 from "../Images/p4.webp"
 import img9 from "../Images/plumbing work for concealed wall mixer with all details.webp"
 import img10 from "../Images/The Biggest Construction Mistakes The World Has Ever Seen.webp"
-import img1 from "../Images/ChatGPT Image Sep 25, 2025, 10_28_27 AM.png"
+import img1 from "../Images/ChatGPT Image Sep 25, 2025, 10_28_27 AM.webp"
 
 
 gsap.registerPlugin(ScrollTrigger)
@@ -47,7 +49,7 @@ const FeaturedWorks = () => {
   }, [])
 
   return (
-    <section className="h-[130vh] flex relative featured-works">
+    <section className="h-[130vh] overflow-hidden flex relative featured-works">
       <div className="flex items-center justify-center w-full absolute top-[6em]">
         <p className="text-md bg-gray-200 rounded-full px-4 py-2">Our featured works</p>
       </div>
@@ -68,7 +70,7 @@ const FeaturedWorks = () => {
             />
           ))}
           <div className="flex justify-center items-center p-6">
-            <a href="" className="text-lg flex justify-center items-center gap-1 w-full bg-black hover:bg-black/40 px-4 py-2 rounded-md text-white transition duration-300 hover:scale-105">More<span>&rarr;</span></a>
+            <Link to="/work" className="text-lg flex justify-center items-center gap-1 w-full bg-black hover:bg-black/40 px-4 py-2 rounded-md text-white transition duration-300 hover:scale-105">More<span>&rarr;</span></Link>
           </div>
         </div>
       </div>
