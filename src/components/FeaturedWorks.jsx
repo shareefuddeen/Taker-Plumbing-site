@@ -14,7 +14,7 @@ import img7 from "../Images/pl.webp"
 import img8 from "../Images/p4.webp"
 import img9 from "../Images/plumbing work for concealed wall mixer with all details.webp"
 import img10 from "../Images/The Biggest Construction Mistakes The World Has Ever Seen.webp"
-import img1 from "../Images/ChatGPT Image Sep 25, 2025, 10_28_27 AM.webp"
+import img1 from "../Images/ChatGPT Image Sep 25, 2025, 10_28_27 AM.png"
 
 
 gsap.registerPlugin(ScrollTrigger)
