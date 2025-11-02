@@ -45,7 +45,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id='hero' className='h-[100%] relative hero overflow-hidden'>
+    <section id='hero' className='h-[80vw] md:h-[100vh] relative hero overflow-hidden'>
       <div className="absolute w-full h-full bg-black/40"></div>
       <img src={HeroImage} alt="hero" className="-z-10 w-full h-full object-fit absolute" />
       <h1 className="text-[17vw] tracking-[-0.2vw] bottom-[7vw] left-[2.6vw] text-white font-bold m-0 absolute">Takerflow</h1>
