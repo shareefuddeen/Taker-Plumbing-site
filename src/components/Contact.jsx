@@ -13,8 +13,8 @@ const Contact = () => {
     return (
         <section id="contact" className="min-h-screen p-12 contact flex justify-center flex-col items-center">
             <p className="text-md bg-gray-200 rounded-full my-16 px-4 py-2">Contact us</p>
-            <div className="h-full w-full rounded flex flex-col gap-12 md:gap-4 sm:gap-6 lg:flex-row justify-center items-center">
-                  <form  className="w-full h-full px-1 sm:px-32 lg:px-2 flex flex-col justify-center items-center gap-6 ">
+            <div className="h-full w-[100vw] rounded flex flex-col gap-12 md:gap-4 sm:gap-6 lg:flex-row justify-center items-center">
+                  <form  className="w-full h-full px-0 sm:px-32 lg:px-2 flex flex-col justify-center items-center gap-6 ">
                         <div className="relative w-2/3">
                             <input id="phone" name="phonenumber" type="tel" placeholder="Enter Phonenumber" className="w-full border-b border-white py-1 focus:border-b-2 focus:border-blue-700 transition-colors focus:outline-none peer bg-inherit text-xl text-white"/>
                         </div>
@@ -30,7 +30,7 @@ const Contact = () => {
 
                     </form>
 
-            <div className="w-full flex justify-center items-center">
+            <div className="w-full px-6 flex justify-center items-center">
                 <img src={img8} alt="The plumber"  className="rounded w-full h-full md:w-2/3 md:h-2/3"/>
             </div>
             </div>
