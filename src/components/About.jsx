@@ -81,7 +81,7 @@ const About = () => {
       <div className="flex About2 relative justify-center gap-16 mt-[16em] h-screen w-full items-center missionBg">
         <div className='w-full h-full bg-black/30 absolute'></div>
         <div className='flex flex-col justify-center px-6 py-4 gap-6'>
-          <h1 className='tracking-[-1px] leading-[8vw] md:text-[10vw] text-6xl font-bold text-white z-10 p-2 missionHeading opacity-0 -translate-x-[160px]'>Our mission is simple.</h1>
+          <h1 className='md:tracking-[-1px] md:leading-[8vw] md:text-[10vw] text-6xl font-bold text-white z-10 p-2 missionHeading opacity-0 -translate-x-[160px]'>Our mission is simple.</h1>
           <p className='md:text-[2.6vw] text-2xl text-white font-bold z-10 p-2 max-w-[41ch] mission opacity-0'>
             We provide reliable, affordable, and long-lasting plumbing services while treating every customer like family.
           </p>
