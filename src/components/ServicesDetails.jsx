@@ -14,7 +14,7 @@ const Services = () => {
 
 
     return (
-        <section className="min-h-[140vh] z-10 -mt-[12em] flex flex-col justify-center p-14 items-center">
+        <section className="overflow-x-hidden min-h-[140vh] z-10 -mt-[12em] flex flex-col justify-center p-14 items-center">
             <p className="text-xl mb-12 bg-gray-200 rounded-full px-4 py-2 ">What we offer</p>
             <div className="grid md:grid-cols-2 gap-12 lg:grid-cols-4 lg:gap-20 md:gap-x-20 md:gap-y-12 p-16">
                 <div className="flex rounded shadow-lg hover:shadow-xl transition justify-center w-[16em] lg:w-[16em] md:w-[16em] items-center bg-[#F5DEB3] flex-col service">

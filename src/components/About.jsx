@@ -72,7 +72,7 @@ const About = () => {
   }, []);
 
   return (
-    <section id="About" className="h-[140vh] relative flex flex-col justify-center items-center">
+    <section id="About" className=" h-[140vh] relative flex flex-col justify-center items-center">
       <div className="absolute top-[-12vw]">
         <p ref={TextRef} className="text-2xl md:text-[3vw] px-2 md:px-[12vw] leading-[1.1em] md:leading-[3.2vw] max-w-[246ch] text-white">
           Takerflow is a trusted plumbing company serving Kumasi and surrounding areas. With over 10 years of experience, we specialize in delivering top-quality plumbing solutions for homes and businesses.

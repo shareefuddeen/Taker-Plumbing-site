@@ -37,7 +37,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="h-[110vh]">
+    <footer className="h-[110vh] overflow-x-hidden">
       <div className="footer h-[70vh] relative">
         <div className="w-full h-full absolute bg-black/40"></div>
       </div>

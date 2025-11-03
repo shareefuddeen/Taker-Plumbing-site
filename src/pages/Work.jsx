@@ -24,13 +24,11 @@ const images = [
   { src: img9, span: "col-span-1 row-span-1" },
   { src: img10, span: "col-span-1 row-span-2" },
   { src: img11, span: "col-span-1 row-span-2" },
-
-
 ];
 
 export default function Work() {
   return (
-    <section className="px-8 py-16 bg-gray-50">
+    <section className="overflow-x-hidden px-8 py-16 bg-gray-50">
       <div className="grid grid-cols-3 auto-rows-[200px] mt-20 gap-4 max-w-6xl mx-auto">
         {images.map((img, index) => (
           <div

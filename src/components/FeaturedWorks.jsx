@@ -41,6 +41,16 @@ const FeaturedWorks = () => {
         invalidateOnRefresh: true
       },
     })
+    gsap.to(".workHeading", {
+            y: 0,
+            opacity:1,
+            ease: "power1.out",
+            stagger: 0.2,
+            scrollTrigger:{
+                trigger:".workHeading",
+                start:"top 80%",
+            }
+    })
 
     return () => {
       tween.scrollTrigger?.kill()
@@ -49,9 +59,9 @@ const FeaturedWorks = () => {
   }, [])
 
   return (
-    <section className="h-[130vh] overflow-hidden flex relative featured-works">
+    <section className="overflow-x-hidden h-[130vh] overflow-hidden flex relative featured-works">
       <div className="flex items-center justify-center w-full absolute top-[6em]">
-        <p className="text-md bg-gray-200 rounded-full px-4 py-2">Our featured works</p>
+        <p className="opacity-0 translate-y-[122px] text-md bg-gray-200 rounded-full px-4 py-2 workHeading">Our featured works</p>
       </div>
       <div
         ref={scrollContainer}

@@ -25,12 +25,22 @@ const Services = () => {
                 start:"top 80%",
             }
     })
+         gsap.to(".serviceHeading", {
+            y: 0,
+            opacity:1,
+            ease: "power1.out",
+            stagger: 0.2,
+            scrollTrigger:{
+                trigger:".serviceHeading",
+                start:"top 80%",
+            }
+    })
 
       },[])
 
   return (
-    <section id="service" className="min-h-screen flex flex-col justify-center items-center py-20 px-6 md:px-14 -mt-[16vw]">
-      <p className="text-md -mt-20 mb-12 bg-gray-200 rounded-full px-4 py-2">What we offer</p>
+    <section id="service" className="overflow-x-hidden min-h-screen flex flex-col justify-center items-center py-20 px-6 md:px-14 -mt-[16vw]">
+      <p className="serviceHeading opacity-0 translate-y-[122px] text-md -mt-20 mb-12 bg-gray-200 rounded-full px-4 py-2">What we offer</p>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-20 p-6">
         <div className="service opacity-0 translate-y-[122px] flex rounded justify-center w-[20em] lg:w-[16em] md:w-[16em] shadow-lg hover:shadow-xl transition items-center bg-[#F5DEB3] flex-col">
           <div className="px-4 py-2 w-full">

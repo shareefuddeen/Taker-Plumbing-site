@@ -24,12 +24,22 @@ const Testimonial = () => {
                 start:"top 80%"
             }
     })
+         gsap.to(".testHeading", {
+            y: 0,
+            opacity:1,
+            ease: "power1.out",
+            stagger: 0.2,
+            scrollTrigger:{
+                trigger:".testHeading",
+                start:"top 80%",
+            }
+    })
 
       },[])
 
     return(
-        <section className="min-h-[120vh] mt-[12vh] flex bg-white justify-center items-center flex-col">
-            <p className="p-12 text-md bg-gray-200 my-6 rounded-full px-4 py-2">What our customers say about us</p>          
+        <section className="overflow-x-hidden min-h-[120vh] mt-[12vh] flex bg-white justify-center items-center flex-col">
+            <p className="p-12 opacity-0 translate-y-[122px]  testHeading text-md bg-gray-200 my-6 rounded-full px-4 py-2">What our customers say about us</p>          
             <div className="gap-12 p-6 md:p-20 flex-wrap lg:flex-nowrap flex justify-center items-center">
             <div className="py-12 testimonial opacity-0 translate-y-[122px] px-8 bg-black text-white rounded-lg t1">
                 <img src={stars} loading="lazy" className="w-18 h-6 mb-2" alt="stars"/>

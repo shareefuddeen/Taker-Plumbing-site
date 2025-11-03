@@ -12,7 +12,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="w-full absolute z-20">
+    <nav className="w-full absolute z-20 overflow-x-hidden">
       <div className="w-[85vw] navbar relative rounded-full text-white flex justify-between items-center mx-auto p-3 mt-6 backdrop-blur-md bg-black/30 shadow-md">
         
         {/* Logo */}
